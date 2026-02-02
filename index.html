@@ -27,19 +27,22 @@
     />
     <style>
       :root {
-        --primary: #14b8a6;
-        --text-main: #0f172a;
-        --text-muted: #64748b;
-        --bg: #ffffff;
-        --card-bg: #f8fafc;
+        /* Light Mode - SnapCanvas Pro Theme */
+        --primary: #06b6d4; /* Teal-500 */
+        --text-main: #09090b; /* Zinc-950 */
+        --text-muted: #71717a; /* Zinc-500 */
+        --bg: #ffffff; /* Base White */
+        --card-bg: #fafafa; /* Zinc-50 */
       }
 
       @media (prefers-color-scheme: dark) {
         :root {
-          --bg: #000000;
-          --text-main: #f8fafc;
-          --text-muted: #94a3b8;
-          --card-bg: #0f172a;
+          /* Dark Mode - SnapCanvas Pro Theme */
+          --bg: #09090b; /* Zinc-950 */
+          --text-main: #fafafa; /* Zinc-50 */
+          --text-muted: #a1a1aa; /* Zinc-400 */
+          --card-bg: #18181b; /* Zinc-900 */
+          --primary: #22d3ee; /* Teal-400 (Dark Mode Primary) */
         }
       }
 
@@ -362,6 +365,30 @@
         <p>
           <strong>Important:</strong> Storage is local only and never synced to
           external servers.
+        </p>
+
+        <h3>4.5 unlimitedStorage</h3>
+        <p>
+          <strong>Purpose:</strong> Allows the extension to store larger amounts
+          of data locally without being limited by standard browser storage
+          quotas.
+        </p>
+        <p>
+          <strong>Usage:</strong> Used only when you work with large images,
+          high-resolution screenshots, or temporary work-in-progress editing
+          data. This ensures smooth performance without data loss during image
+          processing.
+        </p>
+
+        <h3>4.6 downloads</h3>
+        <p>
+          <strong>Purpose:</strong> Enables saving files directly to your
+          device.
+        </p>
+        <p>
+          <strong>Usage:</strong> Used only when you click actions such as
+          “Download” or “Save Image” to store your captured, cropped, resized,
+          or converted images in your computer’s Downloads folder.
         </p>
       </section>
 
